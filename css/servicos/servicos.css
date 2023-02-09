@@ -1,0 +1,141 @@
+.servicos-bg {
+  background-color: var(--cor-1);
+  margin-bottom: 5rem;
+  padding-top: 5rem;
+}
+
+.servicos h1, .parceiros-bg {
+  color: var(--cor-5);
+}
+
+.servicos h1::after, .parceiros h1::after {
+  content: "";
+  width: 6.25rem;
+  height: 8px;
+  display: block;
+  background-color: var(--cor-3);
+  margin-top: 1.875rem;
+}
+
+.servicos {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2.5rem;
+  position: relative;
+}
+
+/* --- DECORAÇÃO */
+.decoracao-1 {
+  position: absolute;
+  width: 25rem;
+  height: 18.75rem;
+  top: 21.875rem;
+  left: -15.625rem;
+  background-color: var(--cor-3)
+
+}
+
+.decoracao-2 {
+  width: 25rem;
+  height: 12.5rem;
+  padding-left: 12.5rem;
+  z-index: 99;
+  padding-top: 3.125rem;
+}
+
+.decoracao {
+  position: absolute;
+  width: 6.25rem;
+  height: 28rem;
+  top: 21.875rem;
+  left: 150px;
+  background-color: var(--cor-4);
+}
+
+@media (max-width: 960px) {
+  .servicos {
+    position: initial;
+  }
+  .decoracao, .decoracao-1, .decoracao-3 {
+    display: none;
+  }
+  .servicos h1 {
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* --- DECORAÇÃO  */
+
+.servicos-conteudo {
+  display: grid;
+  grid-template-columns: minmax(6.25rem, 12.5rem) minmax(6.25rem, 12.5rem) minmax(6.25rem, 12.5rem);
+  justify-content: center;
+  gap: 1.25rem;
+  color: var(--cor-5);
+  padding-bottom: 1.5rem;
+}
+
+.servicos-conteudo img {
+  width: 6.25rem;
+  height: 6.25rem;
+  max-width: 0 auto;
+  margin-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item-servico {
+  padding: 2.5rem 1.25rem;
+  text-align: center;
+  border: 1px solid var(--cor-3);
+}
+
+
+
+@media (max-width: 1000px) {
+  .servicos h1 {
+    margin-right: -10px;
+  }
+  .servicos h1 {
+    margin-left: -4.375rem;
+  }
+}
+
+@media (max-width:860px) {
+  .servicos-conteudo { 
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width:650px) {
+  .servicos { 
+    grid-template-columns: 1fr;
+  }
+  .servicos-conteudo { 
+    grid-template-columns: 1fr 1fr;
+    margin-left: -2.5rem
+  }
+  .item-servico {
+    padding: 2.5rem 1.25rem;
+  }
+}
+
+@media (max-width:500px) {
+  .servicos-conteudo { 
+    grid-template-columns: 1fr;
+    margin-left: -2.5rem
+  }
+  .item-servico {
+    padding: 20px;
+  }
+  .servicos-conteudo img {
+    margin-bottom: 1.25rem;
+  }
+}
+
+.botao-servico {
+  place-self: end;
+}
+
+
+

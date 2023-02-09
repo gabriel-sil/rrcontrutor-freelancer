@@ -1,0 +1,65 @@
+.contato-bg {
+  background-color: var(--cor-3);
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  align-items: center;
+}
+
+.contato p {
+  max-width: 22ch;
+  font-weight: 600;
+  line-height: 2.3rem;
+  font-size: 34px;
+  color: var(--cor-2);
+  margin-top: 40px;
+}
+
+.contato p::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 10px;
+  background-color: var(--cor-5);
+  margin-top: 30px;
+}
+
+form {
+  padding-top: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-form input, .input-form textarea {
+  padding: 10px 0px 10px 20px;
+  font-family: "Poppins";
+  font-size: 1rem;
+  border: 1px solid var(--cor-5);
+}
+
+.input-form input:focus, .input-form textarea:focus {
+  box-shadow: 0 0 0 2px rgba(255, 4, 4, 0.615);
+  outline: none;
+  border: inset 1px solid var(--cor-3);
+}
+
+@media (max-width: 580px) {
+  .contato {
+    grid-template-columns: 1fr;
+  }
+  .contato p {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .contato p::after {
+    margin-top: 15px;
+    height: 5px;
+  }
+}

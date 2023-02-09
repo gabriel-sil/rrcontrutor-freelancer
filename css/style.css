@@ -1,0 +1,27 @@
+/* GLOBAL */
+@import url(./global/global.css); /* OK */
+
+/* INTRODUÇÃO */
+@import url(./introducao/introducao.css);/* OK */
+
+/* HEADER */
+@import url(./header/header.css);/* OK */
+
+/* SERVICOS */
+@import url(./servicos/servicos.css);/* OK */
+
+/* PROJETOS */
+@import url(./projetos/projetos.css);
+
+/* PARCEIROS */
+@import url(./parceiros/parceiros.css);
+
+/* CONTATO */
+@import url(./contato/contato.css);
+
+/* FOOTER */
+@import url(./footer/footer.css);
+
+
+/* HISTORIA */
+@import url(./historia/historia.css);

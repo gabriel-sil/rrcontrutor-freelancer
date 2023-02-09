@@ -1,0 +1,118 @@
+.historia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 80px 0;
+}
+
+.hostoria img {
+  border-radius: 4px;
+}
+
+.historia-bg h1, .historia-bg h2 {
+  color: var(--cor-5);
+  margin-top: 10px;
+} 
+
+.historia-bg h1::after, .historia-bg h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  display: block;
+  background-color: var(--cor-3);
+  margin: 8px 0 16px 0;
+} 
+
+.historia-bg p {
+  margin-left: 20px;
+  color: #393939;
+  margin-bottom: 10px;
+}
+
+
+.historia-img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.historia-img img {
+  width: 100px;
+  height: 100px;
+}
+
+/* OBRAS JÁ FEITAS IMG */
+.obras-concluidas-img {
+  display: flex;  
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.obras-concluidas-img img {
+  width: 300px;
+  height: 220px;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.junto-a-empresa p {
+  line-height: 18px;
+  position: relative;
+  transition: .3s;
+}
+
+.junto-a-empresa p:hover {
+  margin-left: 30px;
+}
+
+
+.junto-a-empresa p:nth-of-type(1) {
+  margin-bottom: 20px;
+}
+
+.junto-a-empresa p::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 4px;
+  background-color: var(--cor-3);
+  position: absolute;
+  top: 5px;
+  left: -16px;
+  transition: .2s;
+}
+
+.junto-a-empresa p:hover::after {
+  width: 14px;
+  height: 6px;
+}
+
+.junto-a-empresa p:nth-of-type(1)::after {
+  display: none;
+} 
+
+.junto-a-empresa p:nth-of-type(1):hover {
+  margin-left: 20px;
+}
+
+/* media query */
+
+@media (max-width: 700px) {
+  .historia {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 40px 0 20px 0;
+  }
+}
+
+/* FORMULARIO */
+
+#contato-pagina .contato {
+  padding-top: 1px;
+}
+
+#contato-pagina .input-form {
+  margin-top: -50px;
+}
+

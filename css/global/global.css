@@ -1,0 +1,152 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* CORES */
+:root {
+  --cor-1: #eeeeef;
+  --cor-2: #ffffff;
+  --cor-3: #c01b21;
+  --cor-4: #700d11;
+  --cor-5: #262e3b;
+}
+
+.cor-1 {
+  background-color: var(--cor-1);
+}
+
+.cor-2 {
+  background-color: var(--cor-2);
+}
+
+.cor-3 {
+  background-color: var(--cor-3);
+}
+
+.cor-4 {
+  background-color: var(--cor-4);
+}
+
+.cor-5 {
+  background-color: var(--cor-5);
+}
+
+/* TIPOGRAFIA */
+
+
+.font-ppp-1 {
+  font: 600 1rem/1 "Poppins", sans-serif;
+  }
+
+.font-pp-1 {
+  font: 600 1.2rem/1 "Poppins", sans-serif;
+  }
+
+.font-p-1 {
+font: 400 1rem/1.5 "Poppins", sans-serif;
+}
+
+.font-p-2 {
+  font: 400 1.5rem/1.5 "Poppins", sans-serif;
+  }
+
+.font-m-1 {
+  font: 500 1.5rem/1.5 "Poppins", sans-serif;
+}
+
+.font-m-2 {
+  font: 600 2.5rem/1.125 "Poppins", sans-serif;
+}
+.font-g-1 {
+  font: 600 4rem/1.125 "Poppins", sans-serif;
+}
+
+
+
+/* TAGS */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1, h2, h3, h4, a, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* BOTÃO */
+
+.botao { 
+  display: inline-block;
+  padding: 16px 32px;
+  color: var(--cor-2);;
+  background-color: var(--cor-3);
+  justify-content: center;
+  border-radius: 4px;
+  margin: 0 auto 40px auto;
+}
+
+.botao:hover {
+  background-color: var(--cor-4);
+}
+
+.botao-2 { 
+  padding: 14px 42px;
+  color: var(--cor-2);;
+  background-color: var(--cor-5);
+  border-radius: 2px;
+  margin: 10px auto 20px 0;
+  border: none;
+}
+
+.botao-2:hover {
+  background-color: #2e3b4f;
+}
+
+
+/* CONTAINER */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container-2 {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0px 40px 0px 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* PÁGINA DE FORM*/
+
+.sucesso-bg {
+  margin: 80px 0;
+}
+
+.sucesso a {
+  color: var(--cor-3);
+}
+
+.font-sucesso {
+  border-bottom: 1px solid var(--cor-5);
+  margin-bottom: 10px;
+}
